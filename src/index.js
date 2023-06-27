@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+//importer css
 import './index.css';
-import App from './App';
+//importer
+import Fiche from './Fiche';
+import Radio from './Radio';
+import Submit from './submit';
+import Model from './Model';
+import Fiche2 from './Fiche2';
+import Fiche3 from './Fiche3';
+//default
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Fiche />
+    <Radio />
+    <Submit />
+    <Model />
+    <Fiche2 />
+    <Fiche3 />
   </React.StrictMode>
 );
 

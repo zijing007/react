@@ -10,34 +10,50 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <style>
+      label { display: inline-block; float: left; width: 100px; background-color:#6495F0;}
+
+      #bloc0 { position: absolute; top:  50px; left: 100px; }
+      #bloc1 { position: absolute; top:  50px; left: 100px; }
+      #bloc2 { position: absolute; top:  50px; left: 400px; }
+      #bloc3 { position: absolute; top:  50px; left: 700px; }
+      #bloc4 { position: absolute; top: 200px; left: 100px; }
+      
+      #ajaxdata {
+        background-color:#649588;
+        position: absolute; top: 500px; left: 350px;
+        width:400px; height: 270px;
+        padding:10px;
+        margin:10px; 
+        border:5px solid gray;
+      }
+      #AjaxCtl {
+        position: absolute; top:  475px; left: 360px;
+        margin:10px;         
+      }
+    </style>
+
+    <title>TP 3</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+   
+    <div id="ajaxdata">
+      <label for="Nom">Nom :&nbsp;&nbsp;</label>        <div id="nom" width="150px">&nbsp;</div><br/>
+      <label for="Age">Age :&nbsp;</label>              <div id="age" width="150px">&nbsp;</div><br/>
+      <label for="NAS">N.A.S. :&nbsp;&nbsp;</label>     <div id="nas" width="150px">&nbsp;</div><br/>
+      <label for="sex">Sexe :&nbsp;&nbsp;</label>       <div id="sex" width="150px">&nbsp;</div><br/>
+      <label for="modele">Modèle :&nbsp;&nbsp;</label>  <div id="model" width="150px">&nbsp;</div><br/>
+      <label for="trans">Transmission :&nbsp;</label>   <div id="trans" width="150px">&nbsp;</div><br/>
+      <label for="sport">Sport :&nbsp;&nbsp;</label>    <div id="sport" width="150px">&nbsp;</div>
+    </div>
+
   </body>
 </html>
